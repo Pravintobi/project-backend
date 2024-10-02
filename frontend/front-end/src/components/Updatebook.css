@@ -1,0 +1,74 @@
+.update-book-card {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1c1c1c; /* Dark background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-card {
+    flex: 1; /* Takes up the left side */
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .form-card h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .update-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border: 1px solid #e50914;
+  }
+  
+  .btn {
+    background-color: #e50914;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f40612;
+  }
+  
+  .image-card {
+    flex: 1; /* Takes up the right side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c; /* Darker background for contrast */
+  }
+  
+  .book-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  

@@ -1,0 +1,77 @@
+.add-book-bg{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('../images/hero.webp') no-repeat center top;
+    align-items: center;
+}
+
+.add-book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px;
+}
+
+.add-book-form {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+}
+
+.add-book-form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background: #333; /* Darker input background */
+    color: #fff; /* White text */
+}
+
+.add-book-form button {
+    background: #e50914; /* Netflix red */
+    color: #fff; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-book-form button:disabled {
+    background: #555; /* Darker button when loading */
+}
+
+.book-list {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll */
+    padding: 10px;
+}
+
+.book-card {
+    background: #333; /* Dark background for book cards */
+    border-radius: 10px;
+    margin: 0 10px; /* Space between cards */
+    width: 150px; /* Fixed width for cards */
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+.book-card img {
+    width: 100%; /* Make image fit the card */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.book-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px; /* Margin adjustments */
+}
+
+.book-card p {
+    margin: 5px 0; /* Margin adjustments */
+}

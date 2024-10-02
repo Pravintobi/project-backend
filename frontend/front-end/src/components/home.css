@@ -1,0 +1,60 @@
+#mu-hero {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mu-primary-btn {
+  background-color: #e50914; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  z-index: 2; /* Ensure button is above overlay */
+  position: relative;
+}
+
+.mu-primary-btn:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Styles for Book Collections Section */
+.book-collections {
+  padding: 60px 0;
+}
+
+.book-collections h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.book-collections p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.book-collections .row h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Styles for Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

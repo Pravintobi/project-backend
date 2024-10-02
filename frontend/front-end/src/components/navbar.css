@@ -1,0 +1,152 @@
+/* Navbar Container */
+.navbar-container {
+    background-color: transparent; /* Start with a transparent background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Navbar Scrolled State */
+.navbar-container.scrolled {
+    background-color: rgba(20, 20, 20, 0.9); /* Dark background when scrolled */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    color: #e50914; /* Netflix red */
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bolder; /* Make brand text bold */
+    margin-right: 20px; /* Add space between brand and nav links */
+    margin-left: -83px;
+}
+
+/* Navbar Navigation */
+.navbar-nav {
+    display: flex !important; /* Ensure flex layout */
+    list-style-type: none;
+    flex-direction: row;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Nav Item */
+.nav-item {
+    margin: 0 10px; /* Reduce space between nav items */
+}
+
+/* Nav Link */
+.nav-link {
+    color: #ffffff; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+    font-weight: bold; /* Make link text bold */
+}
+
+/* Active Link */
+.nav-link.active {
+    color: #e50914 !important; /* Active link color */
+}
+
+/* Nav Link Hover Effect */
+.nav-link:hover {
+    color: #e50914 !important; /* Highlight color on hover */
+}
+
+/* User Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: -108px;
+}
+
+/* User Avatar */
+.user-avatar {
+    border-radius: 50%;
+    margin-right: 2px; 
+   height: 50px;
+}
+
+/* Dropdown */
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button that opens the dropdown */
+.dropbtn {
+  
+    color: #e50914; /* Netflix red */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    opacity: 0; /* Start with hidden content */
+    visibility: hidden; /* Prevent interactions when hidden */
+    margin-right: 40px;
+}
+
+/* Show the dropdown when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Show content with transition */
+    visibility: visible;
+}
+
+/* Styling for dropdown links */
+.dropdown-content li {
+    list-style: none; /* Remove default list styling */
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    color: white; /* Netflix red */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+    font-weight:bolder;
+}
+
+/* Hover effect for links */
+.dropdown-content li a:hover {
+
+    color: #e50914;
+}
+
+/* Button hover effect */
+.dropbtn:hover {
+    
+
+    color: white; 
+    transition: opacity 0.3s ease; 
+    text-decoration: none;
+ 
+}

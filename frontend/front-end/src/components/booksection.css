@@ -1,0 +1,190 @@
+/* General card styling */
+.book-card {
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Fixed height for the card */
+    transition: transform 0.3s ease;
+    flex: 0 0 calc(20% - 10px); /* Flexbox sizing to adjust cards */
+    margin: 5px; /* Spacing between cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content */
+    padding: 10px; /* Add padding inside the card */
+  
+}
+
+/* Hover effect for scaling */
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.card-img-top {
+    object-fit: contain; /* Maintain aspect ratio without cutting off */
+    height: 90%; /* Set height to 90% of the card */
+    width: 90%; /* Set width to 90% of the card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px; /* Padding around the image */
+    background-color: #333; /* Fallback background color for better visibility */
+}
+
+/* Overlay for details */
+.book-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Show overlay on hover */
+.book-card:hover .book-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #e50914; /* Title color */
+}
+
+/* Text styling */
+.card-text {
+    text-align: center;
+    margin: 0 10px;
+    color: #ffffff; /* Text color */
+}
+
+/* Button styling */
+.btn-primary, .btn-secondary {
+    background-color: #e50914; /* Primary button color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9rem;
+    color: white; /* Button text color */
+}
+
+/* Borrowed button */
+.btn-secondary {
+    background-color: #555; /* Secondary button color */
+}
+
+/* Footer */
+.card-footer {
+    padding-top: 15px;
+    text-align: center;
+    background-color: transparent; /* No background */
+}
+
+/* Book row flex container */
+.book-row {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards */
+    justify-content: space-between; /* Space between cards */
+    gap: 10px; /* Gap between cards */
+}
+/* Search Input */
+.search-input {
+    width: 100%; /* Full width */
+    padding: 10px 40px; /* Add padding for better spacing */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    color: #333; /* Text color */
+    background-color: #444; /* Background color */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+/* Focus effect */
+.search-input:focus {
+    background-color: #555; /* Darker background on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on focus */
+}
+
+/* Search icon */
+.search-icon {
+    position: absolute; /* Position it inside the input */
+    left: 10px; /* Position from the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    color: #e50914; /* Icon color */
+    font-size: 1.2rem; /* Icon size */
+}
+
+/* Container for the search bar */
+.search-container {
+    position: relative; /* Relative positioning for icon */
+    margin-bottom: 20px; /* Spacing below the search bar */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .book-card {
+        flex: 0 0 calc(50% - 10px); /* Adjust card size for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .book-card {
+        flex: 0 0 calc(100% - 10px); /* Adjust card size for mobile */
+        height: auto; /* Automatic height for mobile */
+    }
+}
+/* Spinner to show while loading */
+.loading-spinner {
+    position: fixed; /* Use fixed positioning to cover the entire viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Semi-transparent background for a better visual effect */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 9999; /* Make sure it's above other content */
+}
+
+.loading-spinner img {
+    width: 30%; /* Set the width of the GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+.genre-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active, .tab-button:hover {
+    color: #e50914; 
+    transition: transform 0.3s ease;
+}
+
+.tab-button:focus {
+    outline: none;
+}

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+     /* Changed to 'center top' */
+    background-size: cover;
+    background-position: center 75%; /* Move the image slightly up by adjusting the vertical position */
+  }
+  
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/hero.webp') no-repeat center top;
+}
+
+.register-wrapper {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+     text-align: center;
+    color: #fff;
+}
+
+.register-wrapper h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #f40612;
+}
+
+.redirect-text {
+    color: #737373;
+    margin-top: 20px;
+}
+
+.redirect-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redirect-text a:hover {
+    text-decoration: none;
+    color: #f40612;
+    transition: color 0.3s;
+}
